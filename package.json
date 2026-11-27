@@ -1,0 +1,17 @@
+{
+  "name": "cotizaciones-pro-android",
+  "version": "1.0.0",
+  "description": "Setecom Telecomunicaciones C.A. - Proyecto Capacitor para generar APK Android",
+  "scripts": {
+    "android:init": "npx cap add android",
+    "android:sync": "npx cap sync android",
+    "android:open": "npx cap open android"
+  },
+  "dependencies": {
+    "@capacitor/core": "^6.2.0",
+    "@capacitor/android": "^6.2.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^6.2.0"
+  }
+}

@@ -1,0 +1,26 @@
+==========================================================
+Setecom Telecomunicaciones C.A. — CONVERSIÓN A APK ANDROID
+==========================================================
+
+Este paquete ya incluye tu aplicación preconfigurada en "www/index.html"
+con todos tus datos actuales (empresa, logos, clientes, productos, bancos y cotizaciones).
+
+OPCIÓN A: COMPILAR EL .APK EN LA NUBE SIN INSTALAR NADA (RECOMENDADO)
+1. Crea un repositorio nuevo en GitHub (https://github.com/new).
+2. Sube todo el contenido de este ZIP al repositorio (incluyendo la carpeta oculta .github/workflows/build-apk.yml).
+3. Ve a la pestaña "Actions" de tu repositorio en GitHub.
+4. En ~2 minutos verás la ejecución "Compilar APK Android" completada.
+5. Haz clic en ella y descarga el archivo Artifact .apk listo para instalar en tu teléfono Android.
+
+OPCIÓN B: COMPILAR EN TU PC CON ANDROID STUDIO / CAPACITOR
+Requisitos: Node.js 18+ y Android Studio instalados.
+Comandos en la terminal dentro de esta carpeta:
+  npm install
+  npx cap add android
+  npx cap sync android
+  cd android && ./gradlew assembleDebug
+El archivo APK aparecerá en:
+  android/app/build/outputs/apk/debug/app-debug.apk
+
+OPCIÓN C: INSTALACIÓN INMEDIATA SIN COMPILAR (WebAPK)
+Abre la aplicación web desde Google Chrome en tu teléfono Android y pulsa el botón "Instalar App" (o Menú -> Agregar a pantalla principal). Android generará e instalará un WebAPK nativo que funciona 100% sin internet.
